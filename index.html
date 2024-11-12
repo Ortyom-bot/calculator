@@ -1,49 +1,36 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" 
-        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" 
-        integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" defer crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" 
-        integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" defer crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-    <meta charset="UTF-8"></meta>
-    <link rel="stylesheet" href="style.css">
-    <script src="app.js"></script>
+    <meta charset="UTF-8"/>
     <title>Калькулятор</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="app.js"></script>
 </head>
-<body>
-    <main class="main-calc">
-        <div class="card mb-3">
-            <div class="card-body">
-                <h1 class="card-title">Калькулятор</h1>	
-                <hr>
-                <div class="flex-row-block1">
-                    <fieldset class="custom-fieldset rooms-fieldset">
-                        <input id="num1"/>
-                        <input id="num2"/>
-
-                        <div id="operator-btns">
-                            <button id="plus" onclick="op='+'" class="btn_plus"><p class="btns">+</p></button>
-                            <button id="minus" onclick="op='-'" class="btn_minus"><p class="btns">-</p></button>
-                        </div>
-
-                        <div id="operator-btns-2">
-                            <button id="times" onclick="op='*'" class="btn_mult"><p class="btns">*</p></button>
-                            <button id="devide" onclick="op=':'" class="btn_div"><p class="btns">:</p></button>
-                        </div>
-
-                        <button onclick="func()" class="btn_sum">Посчитать</button>
-
-                        <p id="result"></p>
-                    </fieldset>
-                </div>
-            </div>
+<body onload="load()">
+    <div id="calculator">
+        <div class="top">
+            <span id="clear">C</span>
+            <div id="screen"></div>
         </div>
-    </main>
+
+        <div class="keys">
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+            <span class="operator">+</span>
+            <span>4</span>
+            <span>5</span>
+            <span>6</span>
+            <span class="operator">-</span>
+            <span>7</span>
+            <span>8</span>
+            <span>9</span>
+            <span class="operator">÷</span>
+            <span>0</span>
+            <span>.</span>
+            <span class="eval">=</span>
+            <span class="operator">x</span>
+        </div>
+    </div>
 </body>
 </html>
