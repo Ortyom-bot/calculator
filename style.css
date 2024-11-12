@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+input[type="text"] {
+    width: 200px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #4CAF50; 
+    border-radius: 5px;
+    font-size: 20px; 
+}
+
+button {
+    background-color: #4CAF50; 
+    color: white;
+    padding: 10px 20px; 
+    margin: 2px; 
+    border: none; 
+    border-radius: 5px; 
+    font-size: 18px; 
+    cursor: pointer;
+    transition: background-color 0.3s; 
+}
+
+button:hover {
+    background-color: #387e3c;
+}
+
+#result {
+    font-size: 24px;
+    margin-top: 20px; 
+    color: #333; 
+}
+
+#operator-btns {
+    margin-top: 10px;
+}
+
+.card-body {
+    text-align: center;
+    justify-content: center;
+}
+
+.btn_plus {
+    width: 40px; 
+    height: 40px;
+}
+
+.btn_minus {
+    width: 40px; 
+    height: 40px;
+}
+
+.btn_mult {
+    width: 40px; 
+    height: 40px;
+}
+
+.btn_div {
+    width: 40px; 
+    height: 40px;
+}
+
+.btns {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.btn_sum {
+    width: 350px;
+    margin-top: 15px;
+}
